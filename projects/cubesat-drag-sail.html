@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CubeSat Drag Sail Deorbit Sizing Tool | David Dyka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <header class="site-header">
+      <a href="../index.html#top" class="brand"><span class="brand-mark">DD</span><span>David Dyka</span></a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="../about.html">About</a><a href="../index.html#experience">Experience</a><a href="../index.html#projects">Projects</a><a href="../index.html#skills">Skills</a><a href="../contact.html">Contact</a>
+      </nav>
+      <a class="nav-resume" href="../resume.html">Resume</a>
+    </header>
+
+    <main class="page-main section-shell">
+      <a class="back-link" href="../index.html#projects">Back to projects</a>
+      <section class="project-detail case-study-hero">
+        <p class="section-kicker">Spaceflight Mechanics</p>
+        <h1>CubeSat Drag Sail Deorbit Sizing Tool</h1>
+        <p class="hero-statement">
+          A MATLAB orbital-decay model and inverse sizing tool that estimates the drag
+          sail area required for CubeSats to meet selected deorbit timelines in low
+          Earth orbit.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://docs.google.com/document/d/1ejQXKJDH8_UVkjclUZlEaqvDyzl4HyQ69GT3obVax70/edit?usp=sharing" target="_blank" rel="noopener noreferrer">View full report</a>
+        </div>
+      </section>
+
+      <section class="case-study-section image-right reveal">
+        <article class="detail-panel">
+          <p class="section-kicker">The problem</p>
+          <h2>Passive debris mitigation</h2>
+          <p>
+            Many CubeSats do not carry propulsion for controlled disposal. This project
+            investigates how a deployable drag sail can increase area-to-mass ratio and
+            shorten orbital lifetime without propellant.
+          </p>
+          <div class="tags"><span>MATLAB</span><span>Orbital Mechanics</span><span>Numerical Integration</span><span>Design Tool</span></div>
+        </article>
+        <img src="../assets/projects/cubesat-drag-sail/decay-trajectories.png" alt="Orbital decay trajectories for a 4 kg CubeSat with multiple drag sail areas" />
+      </section>
+
+      <section class="case-study-section image-left reveal">
+        <img src="../assets/projects/cubesat-drag-sail/deorbit-vs-area.png" alt="Deorbit time as a function of drag sail area" />
+        <article class="detail-panel">
+          <p class="section-kicker">Method</p>
+          <ul class="project-bullets">
+            <li>Modeled near-circular orbital decay with a piecewise exponential atmosphere.</li>
+            <li>Integrated altitude decay in MATLAB using <code>ode45</code> and a 100 km reentry boundary.</li>
+            <li>Evaluated sail area, initial altitude, spacecraft mass, and target deorbit time.</li>
+            <li>Used a bisection search to find the minimum sail area for a selected mission deadline.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="case-study-section image-right reveal">
+        <article class="detail-panel">
+          <p class="section-kicker">Key result</p>
+          <h2>Small sails create large lifetime reductions</h2>
+          <p>
+            For the 4 kg, 650 km reference case, natural decay did not meet the 25-year
+            guideline in the simulation window. A 0.5 m² sail reduced the modeled
+            lifetime to approximately two years, while larger sails showed diminishing
+            returns.
+          </p>
+          <p>
+            The parametric study also showed that required area rises strongly with
+            altitude and approximately linearly with spacecraft mass.
+          </p>
+        </article>
+        <img src="../assets/projects/cubesat-drag-sail/sizing-heatmap.png" alt="Required drag sail area heatmap for spacecraft mass and initial altitude" />
+      </section>
+
+      <section class="case-study-section image-left reveal">
+        <img src="../assets/projects/cubesat-drag-sail/sizing-tool.png" alt="MATLAB drag sail sizing tool input and output interface" />
+        <article class="detail-panel">
+          <p class="section-kicker">Reusable output</p>
+          <h2>Preliminary sizing calculator</h2>
+          <p>
+            The interactive tool accepts spacecraft mass, initial altitude, target
+            deorbit time, drag coefficient, and base area. It returns the required sail
+            area and verifies the design by comparing trajectories with and without the
+            sail.
+          </p>
+        </article>
+      </section>
+    </main>
+    <script src="../script.js"></script>
+  </body>
+</html>

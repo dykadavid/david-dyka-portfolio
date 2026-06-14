@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Dyka | Aerospace Engineering Portfolio</title>
+    <meta
+      name="description"
+      content="David Dyka is an Aerospace Engineering student at RPI focused on mechanical design, manufacturing, automation, and hands-on prototyping."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <header class="site-header">
+      <a href="index.html#top" class="brand" aria-label="David Dyka home">
+        <span class="brand-mark">DD</span>
+        <span>David Dyka</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="about.html">About</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="nav-resume" href="resume.html">Resume</a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <h1>David Dyka</h1>
+          <p class="hero-statement">
+            Aerospace Engineering Student
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="assets/David-Dyka-Resume.pdf" download>
+              <span>Download Resume</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v11m0 0 4-4m-4 4-4-4M5 21h14" />
+              </svg>
+            </a>
+            <a class="button secondary" href="#projects">View Projects</a>
+          </div>
+          <div class="hero-metrics" aria-label="Profile highlights">
+            <span>CAD</span>
+            <span>FEA</span>
+            <span>Manufacturing</span>
+            <span>MATLAB</span>
+            <span>Experimental Systems</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-tilt>
+          <img src="assets/about/david-portrait.png" alt="Portrait of David Dyka" />
+        </div>
+      </section>
+
+      <section class="intro section-shell" id="about">
+        <div>
+          <h2>Engineering Focus</h2>
+        </div>
+        <p>
+          David is pursuing a B.S. in Aerospace Engineering at RPI, expected May 2027.
+          His work connects aerospace analysis, mechanical design, shop-floor
+          practicality, automation, and prototype-driven problem solving across
+          internships, research, and independent builds.
+        </p>
+      </section>
+
+      <section class="experience section-shell" id="experience">
+        <div class="section-heading">
+          <h2>Experience</h2>
+        </div>
+        <div class="timeline">
+          <article class="experience-card reveal">
+            <img src="assets/experience/atlas-copco-transparent.png" alt="Atlas Copco logo" />
+            <div>
+              <span class="role-type">Internship</span>
+              <h3>Manufacturing Engineering Intern</h3>
+              <p class="org">Atlas Copco</p>
+              <p>
+                Modeling shop-floor and quality-control layouts for a facility expansion,
+                producing skid-plate drawings, validating a custom production fixture, and
+                supporting 5S and additive-manufacturing investment work.
+              </p>
+            </div>
+          </article>
+          <article class="experience-card reveal">
+            <img src="assets/experience/polymathic-transparent.png" alt="Polymathic Innovations logo" />
+            <div>
+              <span class="role-type">Internship</span>
+              <h3>Manufacturing & Mechanical Engineering Intern</h3>
+              <p class="org">Polymathic Innovations</p>
+              <p>
+                Led a modular micro wind turbine line toward small-batch production and
+                developed structurally validated rooftop and ground-mount systems under
+                operational and environmental loads.
+              </p>
+            </div>
+          </article>
+          <article class="experience-card reveal">
+            <img src="assets/experience/rpi-logo-transparent.png" alt="Rensselaer Polytechnic Institute logo" />
+            <div>
+              <span class="role-type">Research</span>
+              <h3>Undergraduate Researcher</h3>
+              <p class="org">Aerosol Jet Printing</p>
+              <p>
+                Produced stochastic fluorescent deposition patterns and improved test
+                repeatability with precision fixturing and an Arduino-controlled automated
+                masking system.
+              </p>
+              <a class="learn-more" href="projects/aerosol-jet-printing.html">Learn more</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects section-shell" id="projects">
+        <div class="section-heading split">
+          <div>
+            <h2>Featured Projects</h2>
+          </div>
+          <div class="filter-row" aria-label="Project filters">
+            <button class="filter-button active" data-filter="all">All</button>
+            <button class="filter-button" data-filter="mechanical">Mechanical</button>
+            <button class="filter-button" data-filter="research">Research</button>
+            <button class="filter-button" data-filter="electronics">Electronics</button>
+            <button class="filter-button" data-filter="aerospace">Aerospace</button>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <a class="project-card reveal" href="projects/snack-launcher.html" data-category="mechanical" data-tilt>
+            <img
+              class="project-cover-image"
+              src="assets/projects/snack-launcher/snack-launcher.jpg"
+              alt="Snack Launcher prototype render"
+            />
+            <div class="project-content">
+              <p class="project-label">Mechanical prototype</p>
+              <h3>Snack Launcher</h3>
+              <p>
+                A mechanical launch system from concept to functional hardware in a
+                10-person engineering team.
+              </p>
+              <div class="tags">
+                <span>CAD</span><span>Prototyping</span><span>Testing</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="project-card reveal" href="projects/reverse-camera-wiper.html" data-category="mechanical" data-tilt>
+            <div class="project-photo-pair">
+              <img src="assets/projects/reverse-camera-wiper/photo-1.jpg" alt="Reverse Camera Wiper CAD model view" />
+              <img src="assets/projects/reverse-camera-wiper/photo-2.jpg" alt="Reverse Camera Wiper mounted on rear camera" />
+            </div>
+            <div class="project-content">
+              <p class="project-label">Mechanism design</p>
+              <h3>Reverse Camera Wiper</h3>
+              <p>
+                A rear camera cleaning mechanism integrating mechanical design and
+                embedded electronics.
+              </p>
+              <div class="tags">
+                <span>DFM</span><span>Mechanisms</span><span>Fabrication</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="project-card reveal" href="projects/aerosol-jet-printing.html" data-category="research" data-tilt>
+            <div class="project-photo-pair">
+              <img src="assets/projects/aerosol-jet-printing/photo-1.jpg" alt="Aerosol Jet Printing illuminated deposition setup" />
+              <img src="assets/projects/aerosol-jet-printing/photo-2.jpg" alt="Aerosol Jet Printing fluorescent material pattern" />
+            </div>
+            <div class="project-content">
+              <p class="project-label">Advanced manufacturing</p>
+              <h3>Aerosol Jet Printing</h3>
+              <p>
+                Research developing physically unclonable material signatures through
+                controlled deposition.
+              </p>
+              <div class="tags">
+                <span>Research</span><span>Manufacturing</span><span>Materials</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="project-card reveal" href="projects/plant-monitor.html" data-category="electronics" data-tilt>
+            <img
+              class="project-cover-image"
+              src="assets/projects/plant-monitor/plant-monitor.jpg"
+              alt="Plant Monitor prototype with plant and sensor hardware"
+            />
+            <div class="project-content">
+              <p class="project-label">Automation build</p>
+              <h3>Plant Monitor</h3>
+              <p>
+                A multi-sensor environmental monitoring system with real-time data
+                visualization.
+              </p>
+              <div class="tags">
+                <span>Arduino</span><span>Python</span><span>Sensors</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="project-card reveal" href="projects/f1-front-wing.html" data-category="aerospace" data-tilt>
+            <div class="project-photo-pair">
+              <img src="assets/projects/f1-front-wing/fea-result.png" alt="Finite element stress result for the F1 front wing" />
+              <img src="assets/projects/f1-front-wing/printed-model.png" alt="Fabricated scale model of the F1 2026 front wing" />
+            </div>
+            <div class="project-content">
+              <p class="project-label">Structural analysis</p>
+              <h3>F1 2026 Front Wing</h3>
+              <p>
+                Siemens NX finite element analysis of a regulation-scale front wing under
+                aerodynamic loading, supported by XFOIL and hand calculations.
+              </p>
+              <div class="tags">
+                <span>Siemens NX</span><span>FEA</span><span>XFOIL</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="project-card reveal" href="projects/cubesat-drag-sail.html" data-category="aerospace" data-tilt>
+            <div class="project-photo-pair">
+              <img src="assets/projects/cubesat-drag-sail/decay-trajectories.png" alt="CubeSat orbital decay trajectories for multiple drag sail areas" />
+              <img src="assets/projects/cubesat-drag-sail/sizing-heatmap.png" alt="Drag sail sizing heatmap by spacecraft mass and altitude" />
+            </div>
+            <div class="project-content">
+              <p class="project-label">Spaceflight mechanics</p>
+              <h3>CubeSat Drag Sail Sizing Tool</h3>
+              <p>
+                A MATLAB orbital-decay model and reusable sizing calculator for passive
+                CubeSat deorbit systems in low Earth orbit.
+              </p>
+              <div class="tags">
+                <span>MATLAB</span><span>Orbital Mechanics</span><span>Numerical Modeling</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="project-card reveal" href="projects/structural-health-monitoring.html" data-category="aerospace" data-tilt>
+            <div class="project-visual shm-visual" role="img" aria-label="Stylized ultrasonic waveform representing piezoelectric structural health monitoring">
+              <span>Project photos coming soon</span>
+            </div>
+            <div class="project-content">
+              <p class="project-label">Experimental sensing</p>
+              <h3>Structural Health Monitoring</h3>
+              <p>
+                A piezoelectric sensing system using transmitted ultrasonic pulses and
+                signal attenuation to identify structural damage.
+              </p>
+              <div class="tags">
+                <span>Piezoelectric</span><span>MATLAB</span><span>Data Analysis</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="archive section-shell" id="additional-builds">
+        <div class="section-heading split">
+          <div>
+            <h2>Additional Builds</h2>
+          </div>
+        </div>
+        <div class="image-card-grid">
+          <article class="image-card reveal">
+            <img src="assets/builds/cannon.jpg" alt="Cannon build" />
+            <h3>Cannon</h3>
+          </article>
+          <article class="image-card reveal">
+            <img src="assets/builds/fishing-lure.jpg" alt="Fishing lure mold build" />
+            <h3>Fishing lure</h3>
+          </article>
+          <article class="image-card reveal">
+            <img src="assets/builds/razor-holder.jpg" alt="Razor holder build" />
+            <h3>Razor holder</h3>
+          </article>
+          <article class="image-card reveal">
+            <img src="assets/builds/bike-phone-mount.jpg" alt="Bike phone mount build" />
+            <h3>Bike phone mount</h3>
+          </article>
+          <article class="image-card reveal">
+            <img src="assets/builds/ski-pole-baskets.jpg" alt="Ski pole baskets build" />
+            <h3>Ski pole baskets</h3>
+          </article>
+          <article class="image-card reveal">
+            <img src="assets/builds/car-light-knob.jpg" alt="Car light knob build" />
+            <h3>Car light knob</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills section-shell" id="skills">
+        <div class="section-heading">
+          <h2>Skills</h2>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-panel reveal">
+            <h3>Design & CAD</h3>
+            <p>SolidWorks, Siemens NX, Fusion 360, GD&T, engineering drawings, fixture design</p>
+          </article>
+          <article class="skill-panel reveal">
+            <h3>Analysis</h3>
+            <p>Structural analysis, finite element analysis, design verification, numerical methods</p>
+          </article>
+          <article class="skill-panel reveal">
+            <h3>Manufacturing & Design</h3>
+            <p>DFM, additive manufacturing, CNC machining, tooling, 5S, process improvement, time studies</p>
+          </article>
+          <article class="skill-panel reveal">
+            <h3>Programming</h3>
+            <p>MATLAB, Python, Java, Arduino, experimental data collection and analysis</p>
+          </article>
+          <article class="skill-panel reveal">
+            <h3>Experimental Systems</h3>
+            <p>Sensor integration, automated test systems, piezoelectric sensing, technical documentation</p>
+          </article>
+          <article class="skill-panel reveal">
+            <h3>Aerospace</h3>
+            <p>Aerodynamics, structures, propulsion, spaceflight mechanics, modeling and controls</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="hobbies section-shell" id="hobbies">
+        <div class="hobby-card reveal">
+          <div class="split">
+            <div>
+              <h2>Hobbies</h2>
+              <p>
+                The same hands-on curiosity shows up outside engineering: systems, motion,
+                craft, tools, weather, terrain, and the pleasure of making physical things
+                work well.
+              </p>
+            </div>
+            <div class="slideshow-controls" aria-label="Hobby slideshow controls">
+              <button class="slide-button" type="button" data-slide-prev aria-label="Previous hobby">&lsaquo;</button>
+              <button class="slide-button" type="button" data-slide-next aria-label="Next hobby">&rsaquo;</button>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow hobby-slideshow reveal" data-slideshow>
+          <figure class="slide active">
+            <img src="assets/hobbies/flying.jpg" alt="David in a glider plane" />
+            <figcaption>Flying</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/hobbies/photography.jpg" alt="Aircraft photography by David" />
+            <figcaption>Photography</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/hobbies/cars-motorcycles.jpg" alt="Kawasaki motorcycle by the water" />
+            <figcaption>Cars and motorcycles</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/hobbies/skiing.jpg" alt="David skiing" />
+            <figcaption>Skiing</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/hobbies/fishing.jpg" alt="David fishing" />
+            <figcaption>Fishing</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/hobbies/woodworking.jpg" alt="Woodworking candle holder project" />
+            <figcaption>Woodworking</figcaption>
+          </figure>
+        </div>
+        <div class="slide-dots" aria-label="Choose hobby">
+          <button class="active" type="button" data-slide-dot="0" aria-label="Show flying"></button>
+          <button type="button" data-slide-dot="1" aria-label="Show photography"></button>
+          <button type="button" data-slide-dot="2" aria-label="Show cars and motorcycles"></button>
+          <button type="button" data-slide-dot="3" aria-label="Show skiing"></button>
+          <button type="button" data-slide-dot="4" aria-label="Show fishing"></button>
+          <button type="button" data-slide-dot="5" aria-label="Show woodworking"></button>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <span>David Dyka</span>
+      <span>Aerospace Engineering Student - RPI</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

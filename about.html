@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | David Dyka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <header class="site-header">
+      <a href="index.html#top" class="brand" aria-label="David Dyka home">
+        <span class="brand-mark">DD</span>
+        <span>David Dyka</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="about.html">About</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="nav-resume" href="resume.html">Resume</a>
+    </header>
+
+    <main class="page-main section-shell">
+      <section class="about-hero">
+        <div class="page-hero">
+          <h1>About David</h1>
+          <p class="hero-statement">
+            David Dyka studies Aerospace Engineering at Rensselaer Polytechnic Institute,
+            where he focuses on aerospace structures, mechanical design, manufacturing,
+            experimental systems, and hands-on prototyping.
+          </p>
+        </div>
+        <figure class="portrait-card reveal">
+          <img src="assets/about/david-portrait.png" alt="Portrait of David Dyka" />
+          <figcaption>David Dyka</figcaption>
+        </figure>
+      </section>
+
+      <section class="page-grid">
+        <article class="detail-panel reveal">
+          <h2>Engineering focus</h2>
+          <p>
+            David is interested in the full engineering loop: model the system, analyze
+            its behavior, build the hardware, collect data, and improve the design. His
+            work spans CAD, FEA, manufacturing, orbital modeling, sensors, and testing.
+          </p>
+        </article>
+        <article class="detail-panel reveal">
+          <h2>Education</h2>
+          <p>
+            Rensselaer Polytechnic Institute, B.S. Aerospace Engineering, expected May
+            2027.
+          </p>
+        </article>
+        <article class="detail-panel reveal">
+          <h2>Experience</h2>
+          <p>
+            Manufacturing Engineering Intern at Atlas Copco, manufacturing and
+            mechanical engineering internships with Polymathic Innovations, and
+            undergraduate research in aerosol jet printing.
+          </p>
+        </article>
+        <article class="detail-panel reveal">
+          <h2>Aviation</h2>
+          <p>
+            Student pilot working toward the FAA Private Pilot Knowledge Test, with six
+            hours of powered flight training and three hours of glider training.
+          </p>
+        </article>
+        <article class="detail-panel reveal">
+          <h2>Leadership</h2>
+          <p>
+            Pi Kappa Phi Pledge Class President and Tech & Robotics Club President.
+          </p>
+        </article>
+        <article class="detail-panel reveal">
+          <h2>Additional background</h2>
+          <p>
+            U.S. citizen eligible for a U.S. security clearance. Fluent in English and
+            Polish.
+          </p>
+        </article>
+      </section>
+
+      <section class="about-slideshow reveal" aria-label="David Dyka life slideshow">
+        <div class="section-heading split">
+          <div>
+            <h2>More of David</h2>
+          </div>
+          <div class="slideshow-controls" aria-label="Slideshow controls">
+            <button class="slide-button" type="button" data-slide-prev aria-label="Previous slide">‹</button>
+            <button class="slide-button" type="button" data-slide-next aria-label="Next slide">›</button>
+          </div>
+        </div>
+
+        <div class="slideshow" data-slideshow>
+          <figure class="slide active">
+            <img src="assets/about/life-1.jpg" alt="David in the mountains" />
+          </figure>
+          <figure class="slide">
+            <img src="assets/about/life-2.png" alt="David as a child" />
+          </figure>
+          <figure class="slide">
+            <img src="assets/about/life-3.png" alt="David on a jet ski" />
+          </figure>
+          <figure class="slide">
+            <img src="assets/about/life-4.jpg" alt="David at a space exhibit" />
+          </figure>
+        </div>
+
+        <div class="slide-dots" aria-label="Choose slide">
+          <button class="active" type="button" data-slide-dot="0" aria-label="Show slide 1"></button>
+          <button type="button" data-slide-dot="1" aria-label="Show slide 2"></button>
+          <button type="button" data-slide-dot="2" aria-label="Show slide 3"></button>
+          <button type="button" data-slide-dot="3" aria-label="Show slide 4"></button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>David Dyka</span>
+      <span>Aerospace Engineering Student - RPI</span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

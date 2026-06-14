@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1 2026 Front Wing Structural Analysis | David Dyka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <header class="site-header">
+      <a href="../index.html#top" class="brand"><span class="brand-mark">DD</span><span>David Dyka</span></a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="../about.html">About</a><a href="../index.html#experience">Experience</a><a href="../index.html#projects">Projects</a><a href="../index.html#skills">Skills</a><a href="../contact.html">Contact</a>
+      </nav>
+      <a class="nav-resume" href="../resume.html">Resume</a>
+    </header>
+
+    <main class="page-main section-shell">
+      <a class="back-link" href="../index.html#projects">Back to projects</a>
+      <section class="project-detail case-study-hero">
+        <p class="section-kicker">Aerospace Structures & Materials</p>
+        <h1>Structural Analysis of an F1 2026 Front Wing</h1>
+        <p class="hero-statement">
+          A team structural-analysis project combining Siemens NX CAD and FEM,
+          aerodynamic load estimation, hand calculations, material comparison, and a
+          fabricated scale model of a regulation-era front wing.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://docs.google.com/presentation/d/1jc-RHQCiVcHHxnqHIdKMxn5WrA-AT32_7-HTvv8f7qY/edit?usp=sharing" target="_blank" rel="noopener noreferrer">View full presentation</a>
+        </div>
+      </section>
+
+      <section class="case-study-section image-right reveal">
+        <article class="detail-panel">
+          <p class="section-kicker">David's contribution</p>
+          <ul class="project-bullets">
+            <li>Scaled the source CAD model to the 1900 mm regulation width.</li>
+            <li>Built a refined FEM model with a 5.15 mm surface mesh and approximately 1.31 million elements.</li>
+            <li>Created an NX material model using carbon-fiber properties and evaluated polyurethane and carbon-fiber cases.</li>
+            <li>Applied five equal point loads to represent a 322.45 N distributed aerodynamic load.</li>
+            <li>Converted an NX airfoil section from DXF to coordinate data for XFOIL and documented geometry-related convergence limits.</li>
+          </ul>
+        </article>
+        <img src="../assets/projects/f1-front-wing/cad-model.png" alt="Siemens NX CAD model of the F1 2026 front wing" />
+      </section>
+
+      <section class="case-study-section image-left reveal">
+        <img src="../assets/projects/f1-front-wing/mesh-model.png" alt="Finite element mesh applied to the scaled F1 front wing" />
+        <article class="detail-panel">
+          <p class="section-kicker">Analysis approach</p>
+          <h2>CAD to structural model</h2>
+          <p>
+            The team prepared a half-wing model using symmetry, assigned structural
+            materials, refined the mesh, applied constraints at the nose and symmetry
+            plane, and compared response under point and distributed loading cases.
+          </p>
+          <div class="tags"><span>Siemens NX</span><span>Simcenter Nastran</span><span>FEM</span><span>Material Selection</span></div>
+        </article>
+      </section>
+
+      <section class="case-study-section image-right reveal">
+        <article class="detail-panel">
+          <p class="section-kicker">Results</p>
+          <h2>Stress and displacement behavior</h2>
+          <p>
+            The simulations produced the expected stress and displacement patterns for
+            the polyurethane and carbon-fiber property models. The study concluded that
+            aerodynamic loading was less likely to cause structural failure than impact
+            or collision damage for the analyzed cases.
+          </p>
+          <p>
+            The report also documents an important limitation: carbon fiber was modeled
+            as a solid isotropic material, so the generated deflection and stress values
+            are useful for comparison but not a final composite certification result.
+          </p>
+        </article>
+        <img src="../assets/projects/f1-front-wing/fea-result.png" alt="Carbon-fiber finite element stress result for the F1 front wing" />
+      </section>
+
+      <section class="case-study-section image-left reveal">
+        <img src="../assets/projects/f1-front-wing/printed-model.png" alt="Completed SLA-printed scale model of the F1 front wing" />
+        <article class="detail-panel">
+          <p class="section-kicker">Fabrication</p>
+          <h2>Scale model</h2>
+          <p>
+            The CAD was separated into printable components, SLA printed at 15.06% of
+            full scale, cleaned, finished, and assembled. The model establishes a path
+            toward future wind-tunnel testing at matched Reynolds-number conditions.
+          </p>
+        </article>
+      </section>
+    </main>
+    <script src="../script.js"></script>
+  </body>
+</html>
