@@ -48,8 +48,8 @@ filterButtons.forEach((button) => {
 const slideshow = document.querySelector("[data-slideshow]");
 const slides = slideshow ? Array.from(slideshow.querySelectorAll(".slide")) : [];
 const dots = Array.from(document.querySelectorAll("[data-slide-dot]"));
-const prevSlide = document.querySelector("[data-slide-prev]");
-const nextSlide = document.querySelector("[data-slide-next]");
+const prevSlide = slideshow?.querySelector("[data-slide-prev]");
+const nextSlide = slideshow?.querySelector("[data-slide-next]");
 let activeSlide = 0;
 
 const showSlide = (index) => {

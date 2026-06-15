@@ -850,6 +850,22 @@ h3 {
   gap: 0.55rem;
 }
 
+.slideshow-controls-overlay {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  left: 1rem;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.hobby-slideshow .slideshow-controls-overlay {
+  top: calc(50% - 1.6rem);
+}
+
 .slide-button {
   display: grid;
   width: 2.7rem;
@@ -862,6 +878,7 @@ h3 {
   cursor: pointer;
   font-size: 1.6rem;
   line-height: 1;
+  pointer-events: auto;
 }
 
 .slide-button:hover {
