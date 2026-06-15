@@ -742,6 +742,11 @@ h3 {
   width: 6.8rem;
 }
 
+.skill-logo-brand img {
+  width: 10rem;
+  height: 4.2rem;
+}
+
 .skill-tool h3 {
   margin-bottom: 0.25rem;
   font-size: 1.3rem;
@@ -1318,6 +1323,20 @@ footer {
   .skill-logo img,
   .skill-logo-wide img {
     max-width: 4rem;
+  }
+
+  .skill-tool-brand {
+    display: block;
+  }
+
+  .skill-tool-brand .skill-logo {
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+
+  .skill-tool-brand .skill-logo img {
+    width: 10rem;
+    max-width: 100%;
   }
 
   .capability-list span {
