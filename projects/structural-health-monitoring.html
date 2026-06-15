@@ -23,48 +23,95 @@
       <a class="back-link" href="../index.html#projects">Back to projects</a>
       <section class="project-detail case-study-hero">
         <p class="section-kicker">Experimental Systems</p>
-        <h1>Structural Health Monitoring — Piezoelectric Sensing System</h1>
+        <h1>Piezoelectric Structural Health Monitoring of Metal Plates</h1>
         <p class="hero-statement">
-          A proof-of-concept non-destructive inspection system that uses piezoelectric
-          transducers, ultrasonic pulses, and signal analysis to identify changes caused
-          by structural damage.
+          An experimental sensing system that transmits guided waves between bonded
+          piezoelectric transducers and measures signal attenuation to identify damage
+          in aluminum plates.
         </p>
+        <div class="hero-actions">
+          <a class="button primary" href="../assets/projects/structural-health-monitoring/piezoelectric-structural-health-monitoring.pdf" target="_blank" rel="noopener noreferrer">View project report</a>
+          <a class="button secondary" href="../assets/projects/structural-health-monitoring/piezoelectric-structural-health-monitoring.pdf" download>Download PDF</a>
+        </div>
       </section>
 
-      <section class="project-detail-layout reveal">
-        <div class="project-detail-visual project-visual shm-visual" role="img" aria-label="Stylized ultrasonic waveform representing the structural health monitoring experiment">
-          <span>Project photos will be added when available</span>
-        </div>
+      <section class="case-study-section image-right reveal">
         <article class="detail-panel">
-          <p class="section-kicker">System overview</p>
+          <p class="section-kicker">Experimental setup</p>
+          <h2>Active sensing across a metal plate</h2>
           <ul class="project-bullets">
-            <li>Instrumented structural specimens with piezoelectric crystals.</li>
-            <li>Transmitted ultrasonic pulses through the material and recorded the received signal.</li>
-            <li>Compared waveform attenuation and signal changes to identify internal damage.</li>
-            <li>Applied experimental data collection and analysis techniques relevant to aerospace airframe inspection and fatigue monitoring.</li>
+            <li>Bonded a transmitting and receiving piezoelectric transducer to aluminum test plates.</li>
+            <li>Drove the actuator with a 50 kHz sine burst and captured a 5 ms response on an oscilloscope.</li>
+            <li>Tested undamaged, light-scratch, heavy-scratch, single-cut, and multiple-cut conditions.</li>
+            <li>Exported each waveform to MATLAB for repeatable processing and comparison.</li>
           </ul>
           <div class="tags"><span>Piezoelectric Sensing</span><span>MATLAB</span><span>Signal Analysis</span><span>Non-Destructive Testing</span></div>
         </article>
+        <img src="../assets/projects/structural-health-monitoring/experimental-setup.jpg" alt="Function generator, oscilloscope, and instrumented plate used for the structural health monitoring experiment" />
       </section>
 
-      <section class="page-grid project-note-grid">
-        <article class="detail-panel reveal">
-          <p class="section-kicker">Engineering value</p>
-          <h2>Damage detection without disassembly</h2>
+      <section class="case-study-section image-left reveal">
+        <img src="../assets/projects/structural-health-monitoring/sensor-plate.jpg" alt="Aluminum test plate with two bonded piezoelectric transducers and a machined cut between them" />
+        <article class="detail-panel">
+          <p class="section-kicker">Damage progression</p>
+          <h2>Controlled changes to the transmission path</h2>
           <p>
-            Active structural health monitoring can reveal changes in a load path or
-            material condition while leaving the structure intact, supporting faster
-            inspection and condition-based maintenance strategies.
+            Damage was introduced in stages between the two sensors so each new waveform
+            could be compared with the undamaged baseline. Surface scratches produced
+            relatively small changes, while cuts through the plate strongly interrupted
+            the guided-wave path.
           </p>
         </article>
-        <article class="detail-panel reveal">
-          <p class="section-kicker">Next update</p>
-          <h2>Test imagery and plots</h2>
+      </section>
+
+      <section class="case-study-section image-right reveal">
+        <article class="detail-panel">
+          <p class="section-kicker">Signal processing</p>
+          <h2>Aligning each response before comparison</h2>
           <p>
-            Experimental setup photos, sensor placement, waveform comparisons, and final
-            analysis plots will be added here when provided.
+            The MATLAB workflow removed DC offset, aligned signals to the baseline using
+            cross-correlation, and calculated signal energy, peak amplitude, and RMS
+            voltage. Statistical outliers were removed before the condition averages
+            were compared.
           </p>
         </article>
+        <img class="project-figure" src="../assets/projects/structural-health-monitoring/aligned-signals.png" alt="Representative aligned voltage signals for each tested damage condition" />
+      </section>
+
+      <section class="case-study-section image-left reveal">
+        <img class="project-figure" src="../assets/projects/structural-health-monitoring/signal-energy.png" alt="Mean signal energy for undamaged, scratch, heavy scratch, cut, and severe damage conditions" />
+        <article class="detail-panel">
+          <p class="section-kicker">Key result</p>
+          <h2>Energy was the clearest damage indicator</h2>
+          <p>
+            The light scratch changed signal energy by roughly 3%, while the heavy
+            scratch produced a moderate reduction of about 27%. A single cut reduced
+            energy by approximately 96%, and the multiple-cut condition by about 92%.
+          </p>
+          <p>
+            The results show that small surface damage was difficult to distinguish from
+            baseline variation, but structural cuts created a clear and repeatable loss
+            in transmitted energy.
+          </p>
+        </article>
+      </section>
+
+      <section class="case-study-section image-right reveal">
+        <article class="detail-panel">
+          <p class="section-kicker">Conclusion</p>
+          <h2>A practical proof of concept</h2>
+          <p>
+            Piezoelectric guided-wave monitoring successfully separated severe structural
+            damage from the undamaged condition without disassembling the specimen. The
+            experiment also showed that response is path-dependent: damage location and
+            geometry matter, so severity is not strictly proportional to signal loss.
+          </p>
+          <p>
+            Future work includes broader frequency testing, additional sensors, improved
+            coupling control, composite specimens, and more advanced signal processing.
+          </p>
+        </article>
+        <img class="project-figure" src="../assets/projects/structural-health-monitoring/damage-index.png" alt="Normalized damage index by condition based on received signal energy" />
       </section>
     </main>
     <script src="../script.js"></script>

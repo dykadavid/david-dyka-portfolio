@@ -1035,6 +1035,12 @@ code {
   box-shadow: 0 16px 50px rgba(38, 51, 63, 0.09);
 }
 
+.case-study-section > img.project-figure {
+  object-fit: contain;
+  padding: 0.7rem;
+  background: #ffffff;
+}
+
 .case-study-section .detail-panel {
   display: flex;
   flex-direction: column;
